@@ -12,28 +12,47 @@ function Navbar() {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleNavClick = (href) => {
+    setIsOpen(false);
+
+    const section = document.querySelector(href);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+
         {/* Logo */}
-        <a
-          href="#"
+        <button
+          onClick={() => {
+            setIsOpen(false);
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
           className="text-xl font-bold tracking-tight"
-          onClick={() => setIsOpen(false)}
         >
           KS<span className="text-gray-500">.</span>
-        </a>
+        </button>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <a
+            <button
               key={item.name}
-              href={item.href}
+              onClick={() => handleNavClick(item.href)}
               className="text-sm text-gray-400 transition-colors hover:text-white"
             >
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
 
@@ -52,14 +71,13 @@ function Navbar() {
         <div className="border-t border-white/10 bg-[#0a0a0a] px-6 py-5 md:hidden">
           <div className="flex flex-col gap-5">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="text-sm text-gray-400 transition-colors hover:text-white"
+                onClick={() => handleNavClick(item.href)}
+                className="text-left text-sm text-gray-400 transition-colors hover:text-white"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
         </div>
