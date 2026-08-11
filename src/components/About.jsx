@@ -22,29 +22,38 @@ function About() {
           {/* About text */}
           <div className="space-y-5 text-base leading-7 text-gray-400 sm:text-lg">
             <p>
-              I'm Kajal Sharma, a Computer Science and Information Technology
-              student with a growing focus on software quality and full-stack
-              web development.
+              I'm <span className="text-white font-medium">Kajal Sharma</span>,
+              a B.Sc. CSIT student and aspiring QA Engineer & MERN Stack
+              Developer with a strong interest in building reliable and
+              user-focused software.
             </p>
 
             <p>
-              My experience spans both sides of the development process. I
-              enjoy building web applications with the MERN stack while also
-              testing applications to identify issues, verify functionality,
-              and improve the overall user experience.
+              My experience covers both software development and quality
+              assurance. I've worked on web applications using React, Node.js,
+              Express.js, and MongoDB while also designing test cases,
+              executing functional and regression testing, and reporting
+              defects.
             </p>
 
             <p>
-              I've worked with manual testing, API testing using Postman,
-              browser testing, test case design, and automation using Selenium
-              and Python. On the development side, I work with React, Node.js,
-              Express.js, and MongoDB.
+              On the QA side, I have hands-on experience with manual testing,
+              API testing using Postman, browser DevTools, test case design,
+              bug reporting, and automation testing using Selenium, Python,
+              and Pytest.
             </p>
 
             <p>
-              I'm always looking to learn, experiment, and improve — whether
-              that means finding a bug others missed or turning an idea into
-              a working application.
+              I've also worked on backend development, REST APIs,
+              authentication, database integration, and full-stack projects.
+              I enjoy understanding how a system works, finding what can go
+              wrong, and helping build a better product.
+            </p>
+
+            <p>
+              I'm continuously learning and looking for opportunities where I
+              can contribute as a QA Engineer while growing my technical
+              development skills.
             </p>
           </div>
 
@@ -52,7 +61,7 @@ function About() {
           <div className="grid content-start gap-4 sm:grid-cols-2">
 
             <div className="rounded-2xl border border-white/10 p-6 transition-colors hover:border-white/20">
-              <p className="text-sm text-gray-500">Focus</p>
+              <p className="text-sm text-gray-500">Primary Focus</p>
               <p className="mt-2 font-medium">
                 QA & Software Testing
               </p>
@@ -68,14 +77,14 @@ function About() {
             <div className="rounded-2xl border border-white/10 p-6 transition-colors hover:border-white/20">
               <p className="text-sm text-gray-500">API Testing</p>
               <p className="mt-2 font-medium">
-                Postman
+                Postman & REST APIs
               </p>
             </div>
 
             <div className="rounded-2xl border border-white/10 p-6 transition-colors hover:border-white/20">
               <p className="text-sm text-gray-500">Automation</p>
               <p className="mt-2 font-medium">
-                Selenium & Python
+                Selenium & Pytest
               </p>
             </div>
 

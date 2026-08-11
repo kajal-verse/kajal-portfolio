@@ -20,21 +20,23 @@ function Hero() {
           </motion.p>
 
           {/* Heading */}
-   <motion.h1
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
->
-  Hi, I'm{" "}
-  <span className="text-cyan-400">Kajal Sharma.</span>
-  <br />
-  I build.
-  <br />
-  I test.
-  <br />
-  I improve.
-</motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
+          >
+            Hi, I'm{" "}
+            <span className="text-cyan-400">
+              Kajal Sharma.
+            </span>
+            <br />
+            I build.
+            <br />
+            I test.
+            <br />
+            I improve.
+          </motion.h1>
 
           {/* Description */}
           <motion.p
@@ -43,9 +45,9 @@ function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-7 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg"
           >
-            I combine software testing and full-stack development to build
+            I combine quality assurance and full-stack development to build
             reliable, user-focused web applications. I enjoy finding issues,
-            solving problems, and turning ideas into working products.
+            solving problems, and turning ideas into better software.
           </motion.p>
 
           {/* Buttons */}
@@ -62,15 +64,25 @@ function Hero() {
               View My Projects
             </a>
 
+             {/* Resume */}
+  <a
+    href="/Kajal_Sharma_Resume.pdf"
+    target="_blank"
+    rel="noreferrer"
+    className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white/40 hover:bg-white/5"
+  >
+    Download Resume ↗
+  </a>
+  
             <a
               href="#contact"
-              className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white"
+              className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white/40"
             >
               Contact Me
             </a>
           </motion.div>
 
-          {/* Skills */}
+          {/* Focus Areas */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
