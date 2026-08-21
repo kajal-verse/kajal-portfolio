@@ -16,17 +16,10 @@ function Hero() {
       className="relative overflow-hidden px-6 pb-16 pt-32 sm:pt-36"
     >
       {/* Background glow */}
-      <div className="pointer-events-none absolute left-1/2 top-40 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[140px]" />
-
+      <div className="relative mx-auto max-w-6xl">
+</div>
       {/* Grid background */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.08]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px)",
-          backgroundSize: "54px 54px",
-        }}
-      />
+      
 
       <div className="relative mx-auto max-w-6xl">
         {/* Availability badge */}
