@@ -5,7 +5,7 @@ function Experience() {
 
         {/* Heading */}
         <div>
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-500">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
             Experience
           </p>
 
