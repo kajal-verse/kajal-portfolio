@@ -1,4 +1,4 @@
-import { Code2, FlaskConical, Settings } from "lucide-react";
+import { Code2, FlaskConical, Settings, TestTube2 } from "lucide-react";
 
 const logos = {
   html: (
@@ -133,6 +133,10 @@ const logos = {
       API
     </div>
   ),
+
+  manual: (
+  <TestTube2 size={18} className="text-cyan-400" />
+),
 };
 
 function SkillBadge({ icon, name }) {
@@ -191,7 +195,7 @@ function Skills() {
 
           {/* QA */}
           <SkillCard icon={FlaskConical} title="QA & Testing">
-            <SkillBadge icon={logos.selenium} name="Manual Testing" />
+            <SkillBadge icon={logos.manual} name="Manual Testing" />
             <SkillBadge icon={logos.api} name="API Testing" />
             <SkillBadge icon={logos.postman} name="Postman" />
             <SkillBadge icon={logos.selenium} name="Selenium" />
