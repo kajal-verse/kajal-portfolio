@@ -30,20 +30,10 @@ function Hero() {
           className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/5 px-4 py-2 text-xs font-medium text-cyan-300"
         >
           <span className="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
-          Open to QA & Software Testing Opportunities
+          Open to Software Development and Testing Opportunities
         </motion.div>
 
-        {/* Main content */}
-        <div className="max-w-4xl">
-          {/* Role */}
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="mb-5 text-sm font-medium uppercase tracking-[0.3em] text-gray-500"
-          >
-            QA Engineer & MERN Stack Developer
-          </motion.p>
+        
 
           {/* Heading */}
           <motion.h1
@@ -177,7 +167,7 @@ function Hero() {
             </div>
           </div>
         </motion.div>
-      </div>
+    
     </section>
   );
 }
